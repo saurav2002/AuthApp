@@ -243,3 +243,7 @@ exports.changePassInDB = async (req, res, next) => {
     next(errorHandler(500, err.message));
   }
 };
+
+exports.aisehe = async (req, res, next) => {
+  console.log(hey);
+};
