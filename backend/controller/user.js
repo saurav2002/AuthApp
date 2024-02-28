@@ -170,7 +170,7 @@ exports.forget = async (req, res, next) => {
       expiresIn: "15m",
     });
 
-    const link = `http://localhost:3000/api/user/changePass/${validUser._id}/${token}`;
+    const link = `https://authapp-1.onrender.com/api/user/changePass/${validUser._id}/${token}`;
     console.log(link);
 
     let transporter = nodemailer.createTransport({
